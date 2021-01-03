@@ -13,4 +13,13 @@ class TenderController extends Controller
 
         return view('product',['tenders'=>$data]);
     }
+    function findTender()
+    {
+
+        return view('findTender');
+    }
+    function displayResult(Request $request){
+        $data= Tender::where("agent",$request->agency)->get();
+        return view('tenderResult',['tenders'=>$data]);
+    }
 }

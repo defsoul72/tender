@@ -33,6 +33,10 @@ Route::get('/logout', function () {
     Session::forget('admin');
     return redirect('/login');
 });
+
+Route::get('/findTender',[TenderController::class,'findTender'])->name("tender.search");
+Route::get('/tenderResult',[TenderController::class,'displayResult'])->name("tender.result");
+
 Route::get('/',[TenderController::class,'index']);
 Route::view('/register','register');
 Route::view('/add_tender','add_tender');

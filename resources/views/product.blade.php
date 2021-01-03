@@ -11,16 +11,12 @@
         <div class="jumbotron text-center">
           <h1>QuoTenFinder</h1>
           <p>Procurement Offer</p>
-          <form class="form-inline" action="/search">
-            <div class="input-group">
-              <input type="text" name="query" class="form-control search-box" placeholder="Search">
-              <div class="input-group-btn">
-                <button type="submit" class="btn btn-default">
-                  <i class="glyphicon glyphicon-search"></i>
-                </button>
-              </div>
-            </div>
-          </form>
+          <row>
+            <div class="searchTender">
+              <a class="btn btn-success" href="{{route('tender.search')}}"> Create New Product</a>
+          </div>
+          </row>
+         
         </div>
 
         <!-- Container (Portfolio Section) -->
