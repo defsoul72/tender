@@ -106,13 +106,13 @@ class ProductController extends Controller
     //     dd($data);
     //     return view('update_tender',['products'=>$data]);
     // }
-    public function update_show(Product $products,$id)
-    {
-        $id = (int)$id;
-        $data = Product::find($id);
-        //dd(gettype($data->publish_date));
-        //dd(gettype($id));
-        //dd($data);
-        return view('update_tender',['products'=>$data]);
-    }
+    // public function update_show(Product $products,$id)
+    // {
+    //     $id = (int)$id;
+    //     $data = Product::find($id);
+    //     //dd(gettype($data->publish_date));
+    //     //dd(gettype($id));
+    //     //dd($data);
+    //     return view('update_tender',['products'=>$data]);
+    // }
 }
