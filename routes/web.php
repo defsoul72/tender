@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\TenderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +33,7 @@ Route::get('/logout', function () {
     Session::forget('admin');
     return redirect('/login');
 });
-Route::view('/',"login");
+Route::get('/',[TenderController::class,'index']);
 Route::view('/register','register');
 Route::view('/add_tender','add_tender');
 Route::post("/login",[UserController::class,'login']);

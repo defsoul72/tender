@@ -64,13 +64,13 @@
               </tr>
             </thead>
             <tbody>
-              @foreach ($products as $item)
+              @foreach ($tenders as $item)
               <div><a href="detail/{{$item['id']}}">              
               <tr>
                 <td>{{$item['id']}}</td>
                 <td>{{$item['no_tender']}}</td>
-                <td><a href="detail/{{$item['id']}}">{{$item['name']}}</a></td>
-                <td>{{$item['publish_date']}}</td>
+                <td><a href="detail/{{$item['id']}}">{{$item['title']}}</a></td>
+                <td>{{$item['due_date']}}</td>
                 <td>{{$item['agent']}}</td>
               </tr>
             </a>
