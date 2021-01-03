@@ -32,18 +32,19 @@ Route::get('/logout', function () {
     Session::forget('admin');
     return redirect('/login');
 });
+Route::view('/',"login");
 Route::view('/register','register');
 Route::view('/add_tender','add_tender');
 Route::post("/login",[UserController::class,'login']);
 Route::post("/loginAdmin",[AdminController::class,'loginAdmin']);
 Route::post("/register",[UserController::class,'register']);
 
-// Route::get("/list_tender",[ProductController::class,'list_tender']);
-// Route::get("delete_tender/{id}",[ProductController::class,'delete_tender']);
-// Route::get("update_show/{id}",[ProductController::class,'update_show']);
-// Route::put("update_show/update_tender/{id}",[ProductController::class,'update_tender']);
-// Route::post("add_to_cart",[ProductController::class,'addToCart']);
-// Route::post("add_tender",[ProductController::class,'add_tender']);
+Route::get("/list_tender",[ProductController::class,'list_tender']);
+Route::get("delete_tender/{id}",[ProductController::class,'delete_tender']);
+Route::get("update_show/{id}",[ProductController::class,'update_show']);
+Route::put("update_show/update_tender/{id}",[ProductController::class,'update_tender']);
+Route::post("add_to_cart",[ProductController::class,'addToCart']);
+Route::post("add_tender",[ProductController::class,'add_tender']);
 
 
 
