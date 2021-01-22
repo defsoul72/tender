@@ -28,6 +28,7 @@ class TenderController extends Controller
     {
         $product= new Tender;
         $product->no_tender=$req->no_tender;
+        $product->id=0;
         $product->title=$req->title;
         $product->state=$req->state;
         $product->due_date=$req->due_date;
