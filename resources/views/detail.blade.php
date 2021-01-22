@@ -5,11 +5,11 @@
         
         <div class="col-sm-6">
             <a href="/">Back</a>
-            <h2>{{$product['name']}}</h2>
-            <h3>Closing date: {{$product['closing_date']}}</h3>
-            <p>Details : {{$product['description']}}</p>
-            <p>Agent : {{$product['agent']}}</p>
-            <p>Field Code : {{$product['kod_bidang']}}</p>
+            <h2>{{$tender['title']}}</h2>
+            <h2>No Tender: {{$tender['no_tender']}}</h2>
+            <h3>Closing date: {{$tender['due_date']}}</h3>
+            <p>State : {{$tender['state']}}</p>
+            <p>Agent : {{$tender['agent']}}</p>
             <br><br>
             
 

@@ -13,7 +13,7 @@
           <p>Procurement Offer</p>
           <row>
             <div class="searchTender">
-              <a class="btn btn-success" href="{{route('tender.search')}}"> Create New Product</a>
+              <a class="btn btn-success" href="{{route('tender.search')}}"> Find my Tender</a>
           </div>
           </row>
          
@@ -37,13 +37,14 @@
         <p>Majlis Amanah Rakyat(MARA)</p>
       </div>
     </div>
-    {{-- <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="https://paraboxstudio.com/wp-content/uploads/2018/07/jkr-logo.png" alt="San Francisco" width="400" height="300">
-        <p><strong>JKR</strong></p>
-        <p>Jabatan Kerja Raya</p>
+    <div class="col-sm-4">
+      {{-- <div class="thumbnail"> --}}
+        <img src="https://logos-download.com/wp-content/uploads/2017/11/UiTM_Universiti_Teknologi_MARA_logo.png" alt="San Francisco" width="275" height="140">
+        <br></br>
+        <p><strong>UiTM</strong></p>
+        <p>Universiti Teknologi Mara</p>
       </div>
-    </div> --}}
+    </div>
   </div>
 </div>
 
@@ -55,7 +56,8 @@
                 <th>No</th>
                 <th>No Tender</th>
                 <th>Name/Tittle</th>
-                <th>Publish_date</th>
+                <th>State</th>
+                <th>Closing_date</th>
                 <th>Agent</th>
               </tr>
             </thead>
@@ -66,6 +68,7 @@
                 <td>{{$item['id']}}</td>
                 <td>{{$item['no_tender']}}</td>
                 <td><a href="detail/{{$item['id']}}">{{$item['title']}}</a></td>
+                <td>{{$item['state']}}</td>
                 <td>{{$item['due_date']}}</td>
                 <td>{{$item['agent']}}</td>
               </tr>
@@ -76,5 +79,6 @@
             
           </table>
         </div>
+  </div>
 </div>
 @endsection

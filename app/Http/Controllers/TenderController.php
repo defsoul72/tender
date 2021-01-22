@@ -74,4 +74,9 @@ class TenderController extends Controller
         //dd($data);
         return view('update_tender',['tenders'=>$data]);
     }
+    function detail($id)
+    {
+        $data=Tender::find($id);
+        return view('detail',['tender'=>$data]);
+    }
 }

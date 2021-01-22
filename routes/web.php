@@ -36,7 +36,8 @@ Route::get('/logout', function () {
 
 Route::get('/findTender',[TenderController::class,'findTender'])->name("tender.search");
 Route::get('/tenderResult',[TenderController::class,'displayResult'])->name("tender.result");
-
+Route::view('/detail','detail');
+Route::get("/detail/{id}",[TenderController::class,'detail']);
 Route::get('/',[TenderController::class,'index']);
 Route::view('/register','register');
 Route::view('/add_tender','add_tender');

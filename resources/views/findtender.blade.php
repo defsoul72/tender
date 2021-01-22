@@ -25,6 +25,7 @@
 </select>
 <button type="submit" > Search </button>
         </form>
+        <a href="/">Back</a>
     </div>
 </div>
 @endsection
