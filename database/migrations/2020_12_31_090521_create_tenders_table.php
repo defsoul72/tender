@@ -19,7 +19,6 @@ class CreateTendersTable extends Migration
             $table->string("state");
             $table->string("no_tender");
             $table->string("agent");
-            $table->string("sector");
             $table->string("type");
             $table->string("publish_date");
             $table->string("due_date");
