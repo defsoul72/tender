@@ -24,9 +24,9 @@ Route::get('/loginAdmin', function () {
     return view('admin_login');
 });
 
-Route::get('/login1', function () {
-    return view('login1');
-});
+// Route::get('/login1', function () {
+//     return view('login1');
+// });
 
 Route::get('/logout', function () {
     Session::forget('user');
@@ -41,7 +41,7 @@ Route::get("/detail/{id}",[TenderController::class,'detail']);
 Route::get('/',[TenderController::class,'index']);
 Route::view('/register','register');
 Route::view('/add_tender','add_tender');
-Route::post("/login",[UserController::class,'login']);
+Route::post("/loginUser",[UserController::class,'loginUser']);
 Route::post("/loginAdmin",[AdminController::class,'loginAdmin']);
 Route::post("/register",[UserController::class,'register']);
 

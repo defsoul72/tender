@@ -1,5 +1,7 @@
-@extends('master')
-@section('content')
+@extends('master2')
+<div class="jumbotron text-center">
+    <h1>QuoTenFinder</h1>
+    </div>
 <div class="container custom-login">
     <div class="row">
         <div class="col-sm-4 col-sm-offset-4">
@@ -19,4 +21,3 @@
         </div>
     </div>
 </div>
-@endsection

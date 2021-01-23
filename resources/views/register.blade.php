@@ -1,5 +1,7 @@
-@extends('master')
-@section('content')
+@extends('master2')
+<div class="jumbotron text-center">
+    <h1>QuoTenFinder</h1>
+    </div>
 <div class="container custom-login">
     <div class="row">
         <div class="col-sm-4 col-sm-offset-4">
@@ -19,7 +21,9 @@
             </div>
             <button type="submit" class="btn btn-default">Register</button>
         </form>
+        <p>No account?</p>
+            <a href="register" target="_blank">Create an account</a>
+            <br><a href="loginAdmin">Login Admin</a>                               
         </div>
     </div>
 </div>
-@endsection
